@@ -5,9 +5,24 @@ RSpec.describe HappyBirthday::Age do
 
   describe '#years_old' do
     subject { age.years_old }
-    let(:birthday) { Date.today.prev_year }
 
-    it { is_expected.to be 1 }
+    context 'when present_day is after birthday' do
+      let(:birthday) { Date.today.prev_year }
+
+      it { is_expected.to be 1 }
+    end
+
+    context 'when today is birthday' do
+      let(:birthday) { Date.today }
+
+      it { is_expected.to be 0 }
+    end
+
+    context 'when present_day is before birthday' do
+      let(:birthday) { Date.today.next_year }
+
+      it { is_expected.to be nil }
+    end
   end
 
   describe '#at' do

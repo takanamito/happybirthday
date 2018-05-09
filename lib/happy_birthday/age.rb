@@ -12,8 +12,10 @@ module HappyBirthday
     end
 
     # Get age
-    # @return [Integer]
+    # @return [Integer] if Age.present_day is after birthday
+    # @return [nil] if Age.present_day is before birthday
     def years_old
+      return nil if present_day < birthday.date
       format = "%Y%m%d"
       (present_day.strftime(format).to_i - birthday.date.strftime(format).to_i) / 10000
     end
