@@ -1,17 +1,17 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "happy_birthday/version"
+require "happybirthday/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "happy_birthday"
-  spec.version       = HappyBirthday::VERSION
+  spec.name          = "happybirthday"
+  spec.version       = Happybirthday::VERSION
   spec.authors       = ["takanamito"]
   spec.email         = ["takanamito0928@gmail.com"]
 
   spec.summary       = %q{A ruby gem that provide convenient function for birthday and age,}
   spec.description   = %q{A ruby gem that provide convenient function for birthday and age,}
-  spec.homepage      = "https://github.com/takanamito/happy_birthday"
+  spec.homepage      = "https://github.com/takanamito/happybirthday"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|

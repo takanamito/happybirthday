@@ -1,10 +1,10 @@
-module HappyBirthday
+module Happybirthday
   class Birthday < Base
     attr_reader :date
 
-    # HappyBirthday::Birtyday initializer
+    # Happybirthday::Birtyday initializer
     # @param birthday [Date,String] birthday Date or date like String (ex."2018-05-08")
-    # @return [HappyBirthday::Birtyday]
+    # @return [Happybirthday::Birtyday]
     def initialize(birthday)
       @date = to_date(birthday)
     end
@@ -16,8 +16,8 @@ module HappyBirthday
       date.month == today.month && date.day == today.day
     end
 
-    # Get HappyBirthday::Age object
-    # @return [HappyBirthday::Age]
+    # Get Happybirthday::Age object
+    # @return [Happybirthday::Age]
     def age
       Age.new(birthday: self)
     end
