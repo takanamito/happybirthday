@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-RSpec.describe HappyBirthday::Birthday do
+RSpec.describe Happybirthday::Birthday do
   describe '#today?' do
-    subject { HappyBirthday.born_on(birthday).today? }
+    subject { Happybirthday.born_on(birthday).today? }
 
     context 'when birthday is today' do
       let(:birthday) { Date.today }
@@ -18,9 +18,9 @@ RSpec.describe HappyBirthday::Birthday do
   end
 
   describe '#age' do
-    subject { HappyBirthday.born_on(birthday).age }
+    subject { Happybirthday.born_on(birthday).age }
     let(:birthday) { Date.today }
 
-    it { is_expected.to be_a(HappyBirthday::Age) }
+    it { is_expected.to be_a(Happybirthday::Age) }
   end
 end

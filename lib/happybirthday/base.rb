@@ -1,6 +1,6 @@
 require 'date'
 
-module HappyBirthday
+module Happybirthday
   class Base
     protected
 

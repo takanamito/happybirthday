@@ -1,6 +1,6 @@
 # HappyBirthday
 
-[![Build Status](https://travis-ci.com/takanamito/happy_birthday.png)](https://travis-ci.com/takanamito/happy_birthday)
+[![Build Status](https://travis-ci.com/takanamito/happybirthday.png)](https://travis-ci.com/takanamito/happybirthday)
 
 A library to calculate age from birthday.
 
@@ -9,7 +9,7 @@ A library to calculate age from birthday.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'happy_birthday'
+gem 'happybirthday'
 ```
 
 And then execute:
@@ -18,22 +18,22 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install happy_birthday
+    $ gem install happybirthday
 
 ## Usage
 
-You can use this gem by calling `HappyBirthday.born_on` method:
+You can use this gem by calling `Happybirthday.born_on` method:
 
 ```ruby
-require 'happy_birthday'
+require 'happybirthday'
 
-birthday = HappyBirthday.born_on('2000-01-01')
+birthday = Happybirthday.born_on('2000-01-01')
 ```
 
 Calculate current age:
 
 ```ruby
-birthday = HappyBirthday.born_on('2000-01-01')
+birthday = Happybirthday.born_on('2000-01-01')
 birthday.age.years_old
 # => 18
 ```
@@ -41,7 +41,7 @@ birthday.age.years_old
 Calculate 10 years after age:
 
 ```ruby
-birthday = HappyBirthday.born_on('2000-01-01')
+birthday = Happybirthday.born_on('2000-01-01')
 birthday.age.years_after(10).years_old
 # => 28
 
@@ -53,12 +53,12 @@ birthday.age.years_before(10).years_old
 Calculate age on specific date:
 
 ```ruby
-birthday = HappyBirthday.born_on('2000-01-01')
+birthday = Happybirthday.born_on('2000-01-01')
 birthday.age.at('2020-01-01').years_old
 # => 20
 
 # if date is before birthday, return nil
-birthday = HappyBirthday.born_on('2000-01-01')
+birthday = Happybirthday.born_on('2000-01-01')
 birthday.age.at('1999-12-31').years_old
 # => nil
 ```
@@ -71,7 +71,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/takanamito/happy_birthday. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/takanamito/happybirthday. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -79,4 +79,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the HappyBirthday project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/takanamito/happy_birthday/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Happybirthday project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/takanamito/happybirthday/blob/master/CODE_OF_CONDUCT.md).
