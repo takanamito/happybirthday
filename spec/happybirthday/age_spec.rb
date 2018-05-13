@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-RSpec.describe HappyBirthday::Age do
-  let(:age) { HappyBirthday.born_on(birthday).age }
+RSpec.describe Happybirthday::Age do
+  let(:age) { Happybirthday.born_on(birthday).age }
 
   describe '#years_old' do
     subject { age.years_old }
@@ -33,7 +33,7 @@ RSpec.describe HappyBirthday::Age do
       let(:date) { Date.today.next_year }
 
       it 'creates new Age object' do
-        expect(subject).to be_a(HappyBirthday::Age)
+        expect(subject).to be_a(Happybirthday::Age)
         expect(subject.present_day).to eq date
       end
     end
@@ -42,7 +42,7 @@ RSpec.describe HappyBirthday::Age do
       let(:date) { Date.today.next_year.to_s }
 
       it 'creates new Age object' do
-        expect(subject).to be_a(HappyBirthday::Age)
+        expect(subject).to be_a(Happybirthday::Age)
         expect(subject.present_day).to eq Date.today.next_year
       end
     end
@@ -54,7 +54,7 @@ RSpec.describe HappyBirthday::Age do
     let(:year) { 1 }
 
     it 'creates 1 year before Age object' do
-      expect(subject).to be_a(HappyBirthday::Age)
+      expect(subject).to be_a(Happybirthday::Age)
       expect(subject.present_day).to eq Date.today.prev_year
     end
   end
@@ -65,7 +65,7 @@ RSpec.describe HappyBirthday::Age do
     let(:year) { 1 }
 
     it 'creates 1 year after Age object' do
-      expect(subject).to be_a(HappyBirthday::Age)
+      expect(subject).to be_a(Happybirthday::Age)
       expect(subject.present_day).to eq Date.today.next_year
     end
   end

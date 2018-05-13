@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "happy_birthday"
+require "happybirthday"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

@@ -1,6 +1,6 @@
 # HappyBirthday
 
-[![Build Status](https://travis-ci.com/takanamito/happy_birthday.png)](https://travis-ci.com/takanamito/happy_birthday)
+[![Build Status](https://travis-ci.com/takanamito/happybirthday.png)](https://travis-ci.com/takanamito/happybirthday)
 
 A library to calculate age from birthday.
 
@@ -9,7 +9,7 @@ A library to calculate age from birthday.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'happy_birthday'
+gem 'happybirthday'
 ```
 
 And then execute:
@@ -18,14 +18,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install happy_birthday
+    $ gem install happybirthday
 
 ## Usage
 
 You can use this gem by calling `HappyBirthday.born_on` method:
 
 ```ruby
-require 'happy_birthday'
+require 'happybirthday'
 
 birthday = HappyBirthday.born_on('2000-01-01')
 ```
@@ -71,7 +71,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/takanamito/happy_birthday. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/takanamito/happybirthday. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -79,4 +79,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the HappyBirthday project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/takanamito/happy_birthday/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the HappyBirthday project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/takanamito/happybirthday/blob/master/CODE_OF_CONDUCT.md).
