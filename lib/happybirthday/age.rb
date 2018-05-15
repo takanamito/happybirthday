@@ -1,3 +1,5 @@
+require 'yaml'
+
 module Happybirthday
   class Age < Base
     attr_reader :birthday, :present_day
@@ -18,6 +20,14 @@ module Happybirthday
       return nil if present_day < birthday.date
       format = "%Y%m%d"
       (present_day.strftime(format).to_i - birthday.date.strftime(format).to_i) / 10000
+    end
+
+    # Whether age is adult or not
+    # @param locale [Symbol] a locale to determine country
+    # @return [Boolean] if Age is adult it returns true
+    def adult?(locale)
+      adult_ages = YAML.load_file('lib/happybirthday/data/adult_age.yml')
+      years_old >= adult_ages[locale.to_s]
     end
 
     # Get Happybirthday::Age object which has specific date you passed
